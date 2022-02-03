@@ -1,0 +1,32 @@
+NAME:
+ctimer - a timer written in C.
+
+DESCRIPTION:
+Ctime tries to be a simple timer written in C. It's messages are displayed
+in plain text with the purpose to be more extensible.
+
+USAGE:
+ctimer [OPTIONS]
+
+       -h, --help
+              Display the basic usage of ctimer
+
+       -H, --hours VALUE
+              Set the hours
+
+       -m, --minutes VALUE
+              Set the minutes
+
+       -s, --seconds VALUE
+              Set the seconds
+
+       -M, --message "Write a message in double cuotes"
+              Set the desired message
+
+       -n, --notify-send
+              Redirect the message to 'notify-send'
+
+       -d, --display
+              Displays the time in the CLI
+
+
