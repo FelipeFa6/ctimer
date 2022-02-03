@@ -41,7 +41,7 @@ int main(int argc, char **argv){
 
     /*Flags*/
     {	"help",         no_argument,        0,  'h' },
-    {	"notify",	      no_argument,				0,	'n' },
+    {	"notify-send",	no_argument,				0,	'n' },
     {	"display",      no_argument,        0,  'd' },
     {	0,         			NULL,              	0,	 NULL }
 	};
