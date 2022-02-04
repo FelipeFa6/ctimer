@@ -36,7 +36,13 @@ ctimer [OPTIONS]
 AUTHOR
         Felipe Farias <felipe.farias.e1@gmail.com>
 
+HOMEPAGE
+        https://felipefarias.xyz/
+
 HOME
         https://github.com/FelipeFa6/ctimer
+
+LICENSE
+        Under BSD
 
 Ctimer  04/02/2022

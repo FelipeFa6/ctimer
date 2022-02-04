@@ -1,3 +1,13 @@
+/* See LICENSE file for copyright and license details.
+ *
+ * ctimer is a basic timer that is able to output through
+ * stdout. The main purspose of this is to achieve extensibility.
+ *
+ * Usage:
+ * $ ctimer -s 20 -M "'Hello World' 'Other Line'" | xargs herbe
+ *
+ * */
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <getopt.h>
