@@ -5,6 +5,12 @@ DESCRIPTION:
 Ctime tries to be a simple timer written in C. It's messages are displayed
 in plain text with the purpose to be more extensible.
 
+INSTALLATION:
+To install the program do 'sudo make clean install'
+To uninstall it do 'sudo make clean uninstall'
+
+
+
 USAGE:
 ctimer [OPTIONS]
 

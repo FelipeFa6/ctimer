@@ -7,17 +7,6 @@
 #include "util.c"
 
 int main(int argc, char **argv){
-  // USAGE:
-  // -----
-  //
-  // ctimer [OPTION]
-  // Capture Arguments like:
-  // example:
-  // ctimer -h 0 -m 2 -s 50 -M "'Hello World' 'Welcome'" --notify
-  //
-  // The message is printed through stdout, or through 'notify-send'
-  // if specified with the --notify flag
-
   static int delay  = 1; // In seconds
   static int hour     = 0;
   static int min      = 0;
@@ -43,22 +32,22 @@ int main(int argc, char **argv){
     {	"help",         no_argument,        0,  'h' },
     {	"notify-send",	no_argument,				0,	'n' },
     {	"display",      no_argument,        0,  'd' },
-    {	0,         			NULL,              	0,	 NULL }
+    {	0,              0,                  0,   0  },
 	};
 
-	// Check arguments passed
+	// arguments
   while((c = getopt_long(argc, argv, short_opt, long_opt, &index_opt)) !=EOF )
   {
     switch(c)
     {
-      case 'h':
       case '?':
       case ':':
+      case 'h':
       default:
         fprintf (stderr, "Usage: %s [-h help] [-H hours] [-m minutes] [-s seconds] [-M 'message to be sent']\n", argv[0]);
         printf ( "\n");
         printf ( "  Flags:\n");
-        printf ( "  [--notify         redirect 'notify-send']\n");
+        printf ( "  [--notify-send    redirect 'notify-send']\n");
         printf ( "  [--display-time   displays the time in console]\n");
         exit (EXIT_FAILURE);
 
