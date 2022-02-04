@@ -1,12 +1,10 @@
-CFLAGS = -Wall -Wextra -pedantic -lX11 -lXft -I/usr/include/freetype2 -pthread
-
 PREFIX ?= /usr/local
 CC ?= cc
 
-all: herbe
+all: ctimer
 
-herbe: ctimer.c
-	$(CC) ctimer.c $(CFLAGS) -o ctimer
+ctimer: ctimer.c util.c
+	$(CC) ctimer.c util.c -o ctimer
 
 install: ctimer
 	mkdir -p ${DESTDIR}${PREFIX}/bin

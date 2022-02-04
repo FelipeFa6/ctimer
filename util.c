@@ -1,7 +1,8 @@
 #include <unistd.h>
+#include <stdio.h>
 #include "util.h"
 
-int ctdwn(int hour, int min, int sec, int delay, int displayTime){
+void ctdwn(int hour, int min, int sec, int delay, int displayTime){
     while(1){
     sec--;
     if(sec < 0){
@@ -15,7 +16,7 @@ int ctdwn(int hour, int min, int sec, int delay, int displayTime){
     }
     
     if(hour < 0 || min < 0 || sec < 0){
-      return 1;
+      break;
     }
 
     if(displayTime){

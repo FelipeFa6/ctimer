@@ -4,7 +4,7 @@
 #include <unistd.h>
 #include <string.h>
 
-#include "util.c"
+#include "util.h"
 
 int main(int argc, char **argv){
   static int delay  = 1; // In seconds
