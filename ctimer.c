@@ -96,6 +96,7 @@ int main(int argc, char **argv){
     system(command);
   }
 
+  printf("\n");
   printf("%s\n", msg);
   exit(EXIT_SUCCESS);
 }

@@ -22,7 +22,8 @@ void ctdwn(int hour, int min, int sec, int delay, int displayTime){
     }
 
     if(displayTime){
-      printf("%02d:%02d:%02d \n", hour, min, sec);
+    	printf("\r%02d:%02d:%02d ", hour, min, sec);
+    	fflush(stdout);
     }
     sleep(delay);
   }
