@@ -2,14 +2,12 @@ NAME:
 ctimer - a timer written in C.
 
 DESCRIPTION:
-Ctime tries to be a simple timer written in C. It's messages are displayed
-in through stdout with the purpose to be more extensible.
+Ctimer tries to be a simple CLI timer that follows the UNIX philosophy.
+The messages are displayed through stdout with the purpose of being more extensible.
 
 INSTALLATION:
 To install the program do 'sudo make clean install'
 To uninstall it do 'sudo make clean uninstall'
-
-
 
 USAGE:
 ctimer [OPTIONS]
@@ -35,4 +33,10 @@ ctimer [OPTIONS]
        -d, --display
               Displays the time in the CLI
 
+AUTHOR
+        Felipe Farias <felipe.farias.e1@gmail.com>
 
+HOME
+        https://github.com/FelipeFa6/ctimer
+
+Ctimer  04/02/2022
