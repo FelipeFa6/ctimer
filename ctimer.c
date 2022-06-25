@@ -3,9 +3,6 @@
  * ctimer is a basic timer that is able to output through
  * stdout. The main purspose of this is to achieve extensibility.
  *
- * Usage:
- * $ ctimer -s 20 -M "'Hello World' 'Other Line'" | xargs herbe
- *
  * */
 
 #include <stdio.h>
@@ -27,7 +24,6 @@ int main(int argc, char **argv){
   char command[100] = "notify-send ";
   char *msg = "Default Message";
   
-  // Argument options section
   int c;
   int index_opt = 0;
   const char short_opt[12] = "hH:m:s:M:nd";
@@ -57,8 +53,8 @@ int main(int argc, char **argv){
         fprintf (stderr, "Usage: %s [-h help] [-H hours] [-m minutes] [-s seconds] [-M 'message to be sent']\n", argv[0]);
         printf ( "\n");
         printf ( "  Flags:\n");
-        printf ( "  [--notify-send    redirect 'notify-send']\n");
-        printf ( "  [--display-time   displays the time in console]\n");
+        printf ( "  [-n --notify-send    redirect 'notify-send']\n");
+        printf ( "  [-d --display-time   displays the time in console]\n");
         exit (EXIT_FAILURE);
 
       case 'H': // Hour
